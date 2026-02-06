@@ -65,7 +65,7 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="./images/image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]"
+      <img id="imageDisplay" src="./image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]"
         style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4 text-center">Will you be my
         Valentine?</h2>
@@ -82,11 +82,7 @@
     </div>
   </div>
 
-  <div id="copy">
-    <p class="text-center text-white text-sm">OG Creator <a
-        href="https://www.instagram.com/aoudumber.dev/reels/#">@aoudumber.dev</a></p>
-  </div>
-
+ 
   <script type="module">
     import confetti from 'https://cdn.skypack.dev/canvas-confetti';
     const yesButton = document.getElementById('yesButton');
@@ -126,7 +122,7 @@
     });
 
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = './images/image7.gif'; // Change to image7.gif
+      imageDisplay.src = './image7.gif'; // Change to image7.gif
       valentineQuestion.textContent = "Yayyyy! You clicked YES? Great, my mom already likes you. 😂"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
